@@ -35,6 +35,29 @@
       margin: 20px 0;
     }
 
+    .video-wrapper {
+      position: relative;
+      display: inline-block;
+    }
+
+.corner-img {
+  position: absolute;
+  top: -70px;
+  right: 0;
+  width: 200px;
+  max-width: 50vw;
+  height: auto;
+  z-index: 2;
+}
+
+@media (max-width: 600px) {
+  .corner-img {
+    top: -60px;
+    right: -50px; /* nudges it further right to avoid logo */
+    width: 140px;
+    max-width: 60vw;
+  }
+}
     .mural-gif {
       width: 60vw;
       max-width: 800px;
@@ -107,10 +130,13 @@
 
   <img src="https://i.imgur.com/GvkTcYF.png" alt="Halo Logo" class="logo" />
 
-  <video class="mural-gif" controls>
-    <source src="https://i.imgur.com/MSharTS.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
+  <div class="video-wrapper">
+    <img src="https://i.imgur.com/SBsagqY.png" alt="See Our Work" class="corner-img" />
+    <video class="mural-gif" controls>
+      <source src="https://i.imgur.com/XU7hdKV.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </div>
 
   <!-- Call to Action -->
   <div class="mural-call">
@@ -121,15 +147,15 @@
       <div class="social-label">CONTACT US DIRECTLY</div>
 
       <div class="contact-buttons">
-        <a href="tel:+19568008185" class="call-button">
+        <a href="tel:+19562586455" class="call-button">
           <img src="Icon/Icon13.png" alt="Call" class="icon-img" />
           Call
         </a>
-        <a href="sms:+19568008185" class="call-button">
+        <a href="sms:+19562586455" class="call-button">
           <img src="Icon/Icon13.png" alt="Text" class="icon-img" />
           Text
         </a>
-          <a href="https://wa.me/19568008185" target="_blank" class="call-button">
+        <a href="https://wa.me/19562586455" target="_blank" class="call-button">
           <img src="Icon/Icon13.png" alt="WhatsApp" class="icon-img" />
           WhatsApp
         </a>
